@@ -12,6 +12,15 @@
 	</div>
 	<div id="playspace" onClick="deal()">
 		<div class = "card anim">		
+			<img src= "cards-removebg.png" alt="card back" class ="card-back animflip">
+			<div class="card-front flip animflip" onClick="window.open('./portfoliodesc.html','#portfoliodesc')">
+				<div class="card-data">
+					<h1>Portfolio</h1>
+					<p>The website you are in right now.</p>
+				</div>
+			</div>
+		</div>
+		<div class = "card anim">		
 			<img src= "cards-removebg.png" alt="card back" class ="card-back ">
 			<div class="card-front flip animflip" onClick="window.open('https://github.com/Redstone-2/CITComputerClub2','gitpage')">
 				<div class="card-data">
@@ -35,14 +44,6 @@
 				<div class="card-data">
 					<h1>Book Promo</h1>
 					<p>A website to display knowlage of the HTML unit.</p>
-				</div>
-			</div>
-		</div>
-		<div class = "card anim">		
-			<img src= "cards-removebg.png" alt="card back" class ="card-back animflip">
-			<div class="card-front flip animflip" onClick="window.open('','')">
-				<div class="card-data">
-					<h1>hello</h1>
 				</div>
 			</div>
 		</div>
@@ -132,6 +133,9 @@ function skipload(){
 	var temp = [];
 	var vh = 100;
 	var cdh = document.getElementsByClassName("card-back")[0].height;
+	for(var i = 0; i<cards.length; i++){
+		temp.push(cards[i]);
+	}
 	cards = temp;
 	for(var i = 0; i<cards.length; i++){
 		cards[i].classList.remove("card");
