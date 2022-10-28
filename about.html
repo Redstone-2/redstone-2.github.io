@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>About Me</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<div id="header">
+		<a href="index.html?link=1" target="#home" >Projects</a>
+		<a href="#" onClick="link('index.html','#home');" class="active">About Me</a>
+	</div>
+	<br>
+	<br>
+	<h1>
+		About Me
+	</h1>
+	<p>Hello! I am Red, and my typical usernames inclued Redstone2, Redstone2.0, Red2, or some other variation of those names. I am currently a student attending the Center For Information Technology. On the projects page of this site, you'll find cards to each and every major-ish project I have worked on. I started designing websites around 7th grade and started learning programing in general sometime in early elementary school. My first exposure to programing was javascript, unlike a lot of others of my age who started with Scratch. More recently, me and a friend taught web design during an afterschool club at our school known as Computer Club. Outside of my webdev knowlage of HTML and CSS, I am also proficent in the languages listed below and can easily pick up more.</p>
+	<ul>
+		<li>Java</li>
+		<li>Python</li>
+		<li>JavaScript</li>
+		<li>VBA</li>
+	</ul>
+	<img id="python" src="pridepython-removebg-preview.png" alt="pride python">
+</body>
+<script>
+	window.name = "#about"; window.onbeforeunload=function(){window.name="";};
+	function link( a,  b){
+		localStorage.setItem("fromLink", true);
+		console.log(localStorage.getItem("fromLink"));
+		window.open(a, b);
+		return false;
+	}
+</script>
+</html>
