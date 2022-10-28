@@ -7,8 +7,8 @@
 </head>
 <body>
 	<div id="header">
-		<a href="index.html?link=1" target="#home" >Projects</a>
-		<a href="#" onClick="link('index.html','#home');" class="active">About Me</a>
+		<a href="index.html" target="#home" >Projects</a>
+		<a href="#" target="#about" class="active">About Me</a>
 	</div>
 	<br>
 	<br>
@@ -26,11 +26,6 @@
 </body>
 <script>
 	window.name = "#about"; window.onbeforeunload=function(){window.name="";};
-	function link( a,  b){
-		localStorage.setItem("fromLink", true);
-		console.log(localStorage.getItem("fromLink"));
-		window.open(a, b);
-		return false;
-	}
+
 </script>
 </html>
