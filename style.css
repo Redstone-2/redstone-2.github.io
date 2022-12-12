@@ -36,6 +36,7 @@ body{
 			transition-property:transform;
   			transition-timing-function: ease-out, ease-out, ease-in-out;
   			transition-duration: 0.5s;
+			cursor: pointer;
 		}
 .flip{transform: rotateY(180deg);}
 .card-data:hover{
@@ -62,6 +63,7 @@ body{
 	padding-left: 5px;
 	padding-right: 5px;
 	border-radius: 10%;
+	cursor: pointer;
 }
 /*header*/
 #header {
