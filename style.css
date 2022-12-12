@@ -18,6 +18,7 @@ body{
 			left: 50%;
 			top: 100px;
 			margin-left: -88px;
+			cursor: pointer;
 		}
 .card-ready{
 			position: absolute;
@@ -36,7 +37,6 @@ body{
 			transition-property:transform;
   			transition-timing-function: ease-out, ease-out, ease-in-out;
   			transition-duration: 0.5s;
-			cursor: pointer;
 		}
 .flip{transform: rotateY(180deg);}
 .card-data:hover{
